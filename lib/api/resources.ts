@@ -703,33 +703,33 @@ export const RESOURCES = {
   // bool provider
   provider_stats: {
     baseUrl: config.api.boolApi ?? "",
-    basePath: "/bool-network-beta",
+    basePath: "/bool-network-beta-mainnet",
     path: "/blockchain/provider" + encodeURIComponent(":info"),
   },
   providers: {
     baseUrl: config.api.boolApi ?? "",
-    basePath: "/bool-network-beta",
+    basePath: "/bool-network-beta-mainnet",
     path: "/blockchain/providers",
   },
   nodes: {
     baseUrl: config.api.boolApi ?? "",
-    basePath: "/bool-network-beta",
+    basePath: "/bool-network-beta-mainnet",
     path: "/node/validators",
     filterFields: [ "validatorStatus" as const, "searchStr" as const ],
   },
   epoch_info: {
     baseUrl: config.api.boolApi ?? "",
-    basePath: "/bool-network-beta",
+    basePath: "/bool-network-beta-mainnet",
     path: "/node/epoch-info",
   },
   era_info: {
     baseUrl: config.api.boolApi ?? "",
-    basePath: "/bool-network-beta",
+    basePath: "/bool-network-beta-mainnet",
     path: "/node/era-info",
   },
   device_statistic: {
     baseUrl: config.api.boolApi ?? "",
-    basePath: "/bool-network-beta",
+    basePath: "/bool-network-beta-mainnet",
     path: "/blockchain/device" + encodeURIComponent(":statistic"),
     filterFields: [
       "deviceId" as const,
@@ -739,19 +739,19 @@ export const RESOURCES = {
   },
   provider_details: {
     baseUrl: config.api.boolApi ?? "",
-    basePath: "/bool-network-beta",
+    basePath: "/bool-network-beta-mainnet",
     path: "/blockchain/provider-detail",
     filterFields: [ "providerId" as const ],
   },
   validator_details: {
     baseUrl: config.api.boolApi ?? "",
-    basePath: "/bool-network-beta",
+    basePath: "/bool-network-beta-mainnet",
     path: "/node/validator-detail",
     filterFields: [ "address" as const ],
   },
   validator_statistic: {
     baseUrl: config.api.boolApi ?? "",
-    basePath: "/bool-network-beta",
+    basePath: "/bool-network-beta-mainnet",
     path: "/node/validator-statistic",
     filterFields: [
       "address" as const,
@@ -761,7 +761,7 @@ export const RESOURCES = {
   },
   dhc_devices: {
     baseUrl: config.api.boolApi ?? "",
-    basePath: "/bool-network-beta",
+    basePath: "/bool-network-beta-mainnet",
     path: "/blockchain/device" + encodeURIComponent(":owner"),
     filterFields: [
       "pageNo" as const,
@@ -772,13 +772,13 @@ export const RESOURCES = {
   },
   dhc_devices_info: {
     baseUrl: config.api.boolApi ?? "",
-    basePath: "/bool-network-beta",
+    basePath: "/bool-network-beta-mainnet",
     path: "/blockchain/device" + encodeURIComponent(":info"),
     filterFields: [ "ownerAddress" as const ],
   },
   dhc_device: {
     baseUrl: config.api.boolApi ?? "",
-    basePath: "/bool-network-beta",
+    basePath: "/bool-network-beta-mainnet",
     path: "/blockchain/device",
     filterFields: [ "deviceId" as const ],
   },
