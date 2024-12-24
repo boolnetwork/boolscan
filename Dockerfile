@@ -122,7 +122,6 @@ COPY --chmod=755 ./deploy/scripts/make_envs_script.sh .
 ## Assets downloader
 COPY --chmod=755 ./deploy/scripts/download_assets.sh .
 ## Favicon generator
-COPY --chmod=755 ./deploy/scripts/favicon_generator.sh .
 COPY --from=builder /app/deploy/tools/favicon-generator ./deploy/tools/favicon-generator
 RUN ["chmod", "-R", "777", "./deploy/tools/favicon-generator"]
 RUN ["chmod", "-R", "777", "./public"]
