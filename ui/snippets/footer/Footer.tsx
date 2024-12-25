@@ -46,7 +46,7 @@ const Footer = () => {
       url: 'https://github.com/boolnetwork/boolscan',
     },
     {
-      icon: 'social/tweet' as const,
+      icon: 'social/twitter' as const,
       iconSize: '18px',
       text: 'Twitter',
       url: 'https://www.twitter.com/bool_official',
@@ -111,7 +111,7 @@ const Footer = () => {
         <Box gridArea={ gridArea }>
           <HStack spacing={ 1 }>
             <Image
-              src="/favicon/favicon-footer.png"
+              src="/assets/favicon/favicon-footer.png"
               alt="Bool Scan"
               unoptimized
               width={ 30 }

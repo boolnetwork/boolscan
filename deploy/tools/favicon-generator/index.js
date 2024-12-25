@@ -8,6 +8,7 @@ generateFavicons();
 async function generateFavicons() {
   console.log('Generating favicons...');
   const masterUrl = process.env.MASTER_URL;
+  console.log('master url is '+ masterUrl);
   try {
     if (!masterUrl) {
       throw new Error('FAVICON_MASTER_URL or NEXT_PUBLIC_NETWORK_ICON must be set');
