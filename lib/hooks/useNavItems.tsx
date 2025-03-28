@@ -253,24 +253,24 @@ export default function useNavItems(): ReturnType {
           icon: "bool/provider",
           isActive: pathname.startsWith("/dhcs"),
         }, // beta testnet 中不显示
-      {
-        text: "Ecosystem",
-        icon: "ecosystem",
-        subItems: [
-          {
-            text: "Dashboard",
-            url: `https://dashboard.boolscan.com?network=${ networkName() }`,
-          },
-          {
-            text: "Bridge Explorer",
-            url: `https://bridge.boolscan.com?network=${ networkName() }`,
-          },
-          {
-            text: "Oracle Explorer",
-            url: `https://oracle.boolscan.com?network=${ networkName() }`,
-          },
-        ] as Array<NavItemExternal>,
-      },
+      // {
+      //   text: "Ecosystem",
+      //   icon: "ecosystem",
+      //   subItems: [
+      //     {
+      //       text: "Dashboard",
+      //       url: `https://dashboard.boolscan.com?network=${ networkName() }`,
+      //     },
+      //     {
+      //       text: "Bridge Explorer",
+      //       url: `https://bridge.boolscan.com?network=${ networkName() }`,
+      //     },
+      //     {
+      //       text: "Oracle Explorer",
+      //       url: `https://oracle.boolscan.com?network=${ networkName() }`,
+      //     },
+      //   ] as Array<NavItemExternal>,
+      // },
       {
         text: "Others",
         icon: "gear",
