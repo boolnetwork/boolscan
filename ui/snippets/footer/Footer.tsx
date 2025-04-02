@@ -43,13 +43,13 @@ const Footer = () => {
       icon: 'social/git' as const,
       iconSize: '18px',
       text: 'GitHub',
-      url: 'https://github.com/boolnetwork/boolscan',
+      url: 'https://github.com/safeliquid',
     },
     {
       icon: 'social/tweet' as const,
       iconSize: '18px',
       text: 'Twitter',
-      url: 'https://www.twitter.com/bool_official',
+      url: 'https://x.com/SafeLiquid_Ai',
     },
   ];
 
@@ -111,21 +111,21 @@ const Footer = () => {
         <Box gridArea={ gridArea }>
           <HStack spacing={ 1 }>
             <Image
-              src="/favicon/favicon-footer.png"
-              alt="Bool Scan"
+              src="/favicon/favicon-32x32.png"
+              alt="Safeliquid Scan"
               unoptimized
               width={ 30 }
               height={ 30 }
             />
             <Text fontSize="md">
               Powered by{ ' ' }
-              <Link fontSize="md" href="https://bool.network">
-                Bool Network
+              <Link fontSize="md" href="https://safeliquid.ai">
+                Safeliquid
               </Link>
             </Text>
           </HStack>
           <Text mt={ 3 } fontSize="xs">
-            Bool Scan is a Block Explorer and Analytics Platform for the Bool
+            Safeliquid Scan is a Block Explorer and Analytics Platform for the Safeliquid
             Network.
           </Text>
           { /* <VStack spacing={ 1 } mt={ 6 } alignItems="start">
