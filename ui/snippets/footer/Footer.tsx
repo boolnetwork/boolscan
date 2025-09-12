@@ -1,14 +1,4 @@
-// import type { GridProps } from '@chakra-ui/react';
-// import {
-//   Box,
-//   Grid,
-//   Flex,
-//   Text,
-//   Link,
-//   VStack,
-//   Skeleton,
-//   HStack,
-// } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 // import { useQuery } from '@tanstack/react-query';
 // import Image from 'next/image';
 import React from 'react';
@@ -31,7 +21,20 @@ const MAX_LINKS_COLUMNS = 4;
 // const FRONT_COMMIT_URL = `https://github.com/boolnetwork/boolscan/commit/${ config.UI.footer.frontendCommit }`;
 
 const Footer = () => {
-  return null;
+  return (
+    <Box 
+      as="footer" 
+      px={{ base: 4, lg: 12 }} 
+      py={{ base: 4, lg: 9 }} 
+      borderTop="1px solid" 
+      borderColor="divider"
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
+    >
+      <NetworkAddToWallet />
+    </Box>
+  );
   
   // // const { data: backendVersionData } = useApiQuery("config_backend_version", {
   // //   queryOptions: {
