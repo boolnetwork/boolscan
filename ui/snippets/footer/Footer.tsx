@@ -31,27 +31,26 @@ const MAX_LINKS_COLUMNS = 4;
 // const FRONT_COMMIT_URL = `https://github.com/boolnetwork/boolscan/commit/${ config.UI.footer.frontendCommit }`;
 
 const Footer = () => {
-  // const { data: backendVersionData } = useApiQuery("config_backend_version", {
-  //   queryOptions: {
-  //     staleTime: Infinity,
-  //   },
-  // });
-  // const apiVersionUrl = getApiVersionUrl(backendVersionData?.backend_version);
-  // const issueUrl = useIssueUrl(backendVersionData?.backend_version);
-  const BLOCKSCOUT_LINKS = [
-    {
-      icon: 'social/git' as const,
-      iconSize: '18px',
-      text: 'GitHub',
-      url: 'https://github.com/boolnetwork/boolscan',
+    // const { data: backendVersionData } = useApiQuery("config_backend_version", {
+    //   queryOptions: {
+    //     staleTime: Infinity,
+    //   },
+    // });
+    // const apiVersionUrl = getApiVersionUrl(backendVersionData?.backend_version);
+    // const issueUrl = useIssueUrl(backendVersionData?.backend_version);
+    const BLOCKSCOUT_LINKS =  [{
+        icon: 'social/git' as const,
+        iconSize: '18px',
+        text: 'GitHub',
+        url: '',
     },
-    {
-      icon: 'social/twitter' as const,
-      iconSize: '18px',
-      text: 'Twitter',
-      url: 'https://www.twitter.com/bool_official',
-    },
-  ];
+        {
+            icon: 'social/twitter' as const,
+            iconSize: '18px',
+            text: 'Twitter',
+            url: '',
+        },
+    ];
 
   // const frontendLink = (() => {
   //   if (config.UI.footer.frontendVersion) {
@@ -105,30 +104,29 @@ const Footer = () => {
     [],
   );
 
-  const renderProjectInfo = React.useCallback(
-    (gridArea?: GridProps['gridArea']) => {
-      return (
-        <Box gridArea={ gridArea }>
-          <HStack spacing={ 1 }>
-            <Image
-              src="/assets/favicon/favicon-footer.png"
-              alt="Bool Scan"
-              unoptimized
-              width={ 30 }
-              height={ 30 }
-            />
-            <Text fontSize="md">
-              Powered by{ ' ' }
-              <Link fontSize="md" href="https://bool.network">
-                Bool Network
-              </Link>
-            </Text>
-          </HStack>
-          <Text mt={ 3 } fontSize="xs">
-            Bool Scan is a Block Explorer and Analytics Platform for the Bool
-            Network.
-          </Text>
-          { /* <VStack spacing={ 1 } mt={ 6 } alignItems="start">
+    const renderProjectInfo = React.useCallback(
+        (gridArea?: GridProps['gridArea']) => {
+            return (
+                <Box gridArea={gridArea}>
+                    <HStack spacing={1}>
+                        <Image
+                            src="/assets/favicon/favicon.png"
+                            alt="DeepDex Application Testnet explorer"
+                            unoptimized
+                            width={30}
+                            height={30}
+                        />
+                        <Text fontSize="md">
+                            Powered by{' '}
+                            <Link fontSize="md" href="https://deepdex.finance">
+                                DeepDex Application
+                            </Link>
+                        </Text>
+                    </HStack>
+                    <Text mt={3} fontSize="xs">
+                        DeepDex Explorer is a Block Explorer and Analytics Platform for the DeepDex .
+                    </Text>
+                    { /* <VStack spacing={ 1 } mt={ 6 } alignItems="start">
           { apiVersionUrl && (
             <Text fontSize="xs">
               Backend: <Link href={ apiVersionUrl } target="_blank">{ backendVersionData?.backend_version }</Link>
