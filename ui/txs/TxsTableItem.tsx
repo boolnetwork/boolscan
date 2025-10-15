@@ -70,7 +70,7 @@ const TxsTableItem = ({
       </Td>
       <Td>
         <VStack alignItems="start">
-          <TxType types={ tx.tx_types } isLoading={ isLoading }/>
+          <TxType types={ tx.transaction_types ?? tx.tx_types } isLoading={ isLoading }/>
           <TxStatus
             status={ tx.status }
             errorText={ tx.status === "error" ? tx.result : undefined }
